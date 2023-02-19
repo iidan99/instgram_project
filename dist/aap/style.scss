@@ -1,8 +1,9 @@
 @import "./styles/status-bar";
 @import "./styles/header";
 @import "./styles/stories";
-@import "./assets/font/_font.scss";
 @import "./styles/image_header";
+@import "./styles/image_body";
+@import "./styles/image_link";
 
 @font-face {
   font-family: myFirstFont;

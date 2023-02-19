@@ -1,0 +1,23 @@
+.image_link {
+  display: flex;
+  height: 43px;
+  background-color: #1fa1ff;
+  align-items: center;
+  &__details {
+    display: flex;
+    background-color: #1fa1ff;
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 100%;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #ffffff;
+    img {
+      width: 9.9px;
+      height: 16.9;
+    }
+    h3 {
+      font-weight: 300;
+    }
+  }
+}

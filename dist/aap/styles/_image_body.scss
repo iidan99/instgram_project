@@ -1,0 +1,41 @@
+.image_body {
+  &__img {
+    position: relative;
+    height: 391px;
+    &-pages {
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 30px;
+      top: 22px;
+      right: 19px;
+      border-radius: 12px;
+      justify-content: center;
+      color: white;
+      font-weight: 100;
+      position: absolute;
+      font-size: 0.75rem;
+      padding: 4px 6px;
+    }
+    &-tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 24px;
+      height: 24px;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(2px);
+      border-radius: 60px;
+      bottom: 42px;
+      left: 18px;
+      &-body {
+        position: absolute;
+        top: 12px;
+      }
+      &-head {
+        position: absolute;
+        top: 4px;
+      }
+    }
+  }
+}
