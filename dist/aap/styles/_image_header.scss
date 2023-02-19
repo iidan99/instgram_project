@@ -1,0 +1,32 @@
+.image_header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 23px 15px 15px;
+    &-left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80px;
+      img {
+        border-radius: 30px;
+        width: 32.43px;
+      }
+      h3 {
+        font-size: 0.75rem;
+      }
+    }
+    &-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 15px;
+      &-dot {
+        width: 3px;
+        height: 3px;
+        background-color: #000000;
+        border-radius: 60px;
+      }
+    }
+  }
+}

@@ -3,11 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
-
-  padding: 0 23px;
+  padding: 0 14px 0 38px;
   border-radius: 15px 15px 0 0;
-
+  &__time {
+    font-weight: 600;
+  }
   &__details {
     justify-content: space-evenly;
     width: 100px;
@@ -16,8 +16,19 @@
     &-wifi {
       width: 17px;
     }
-    &-buttery {
+    &-buttery-container {
       width: 25px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 29px;
+      img {
+        position: absolute;
+      }
+      &-end {
+        left: 27px;
+      }
     }
   }
 }
