@@ -1,0 +1,41 @@
+.image_reaction {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    position: relative;
+    &-simbole {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 95px;
+    }
+    &-dots {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 55px;
+      // height: 100%;
+      position: absolute;
+      left: 170px;
+      &-num {
+        background: #c4c4c4;
+        border-radius: 60px;
+        width: 8px;
+        height: 8px;
+        &--active {
+          background-color: #32b5ff;
+        }
+        &--smaller {
+          width: 5px;
+          height: 5px;
+        }
+        &--smallest {
+          width: 3px;
+          height: 3px;
+        }
+      }
+    }
+  }
+}

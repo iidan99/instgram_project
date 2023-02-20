@@ -4,6 +4,11 @@
 @import "./styles/image_header";
 @import "./styles/image_body";
 @import "./styles/image_link";
+@import "./styles/image_reaction";
+@import "./styles/image_content";
+@import "./styles/message_input";
+@import "./styles/bottom_nav";
+@import "./styles/phone_nav";
 
 @font-face {
   font-family: myFirstFont;
@@ -27,12 +32,25 @@ html {
     #e300a4 48.46%,
     #ffb763 106.28%
   );
-  height: 100vh;
 }
 body {
-  margin: 0 auto;
+  height: 100%;
+  margin: 49px auto;
+  // overflow: hidden;
+}
+
+.container {
   width: 390px;
-  height: 80%;
   background-color: #ffffff;
   border-radius: 15px;
+}
+.image_scroll {
+  overflow: scroll;
+  height: 585px;
+  &::-webkit-scrollbar {
+    height: 0.3em;
+    width: 0;
+    display: block;
+    // opacity: 0.7;
+  }
 }

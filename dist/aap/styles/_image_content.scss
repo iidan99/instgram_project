@@ -1,0 +1,30 @@
+.image_content {
+  &__container {
+    padding: 0 15px;
+    line-height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    &-viewall {
+      color: #6e6e6e;
+    }
+    &-likes {
+      font-weight: 800;
+      font-size: 0.875rem;
+    }
+    &-details {
+      margin: 6px 0;
+      font-size: 0.875rem;
+      font-weight: 200;
+      &-user {
+        font-weight: 800;
+      }
+      &-content {
+        &--more {
+          color: #6e6e6e;
+        }
+      }
+    }
+  }
+}

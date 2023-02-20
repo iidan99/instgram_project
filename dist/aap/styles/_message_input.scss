@@ -1,0 +1,33 @@
+.message_input {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 15px;
+    &-left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 30px;
+        border-radius: 60px;
+      }
+      input {
+        border: none;
+        padding: 5px;
+        width: 236px;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    }
+    &-right {
+      display: flex;
+      justify-content: space-between;
+      width: 65px;
+      img {
+        width: 15px;
+      }
+    }
+  }
+}
