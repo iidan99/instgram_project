@@ -8,11 +8,27 @@
     &-simbole {
       @include flex(flex, space-between, center);
       width: 95px;
+      &-heart {
+        @include flex();
+        width: 24px;
+        height: 24px;
+        position: relative;
+        &:hover &--fill {
+          width: 25px;
+          z-index: 3;
+        }
+        img {
+          position: absolute;
+        }
+        &--fill {
+          transition: all 1s;
+          width: 0;
+        }
+      }
     }
     &-dots {
       @include flex(flex, space-between, center);
       width: 55px;
-      // height: 100%;
       position: absolute;
       left: 170px;
       &-num {

@@ -71,6 +71,24 @@
   align-items: center;
   width: 120px;
 }
+.header_container__icons-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.header_container__icons-heart:hover .header_container__icons-heart-fill {
+  width: 25px;
+}
+.header_container__icons-heart img {
+  position: absolute;
+}
+.header_container__icons-heart-fill {
+  width: 0px;
+  transition: all 1s;
+}
 .header_container__icons-chat {
   display: flex;
   justify-content: center;
@@ -78,6 +96,11 @@
   position: relative;
   height: 20px;
   width: 20px;
+  transition: all 0.5s;
+}
+.header_container__icons-chat:hover {
+  background-color: var(--light-blue);
+  border-radius: 60px;
 }
 .header_container__icons-chat img {
   position: absolute;
@@ -88,11 +111,15 @@
   width: 13.75px;
 }
 .header_container__icons-add {
+  position: relative;
   border: 2px solid var(--black-color);
   border-radius: 5px;
   height: 20px;
   width: 20px;
-  position: relative;
+  transition: all 0.5s;
+}
+.header_container__icons-add:hover {
+  background-color: #f6b73e;
 }
 .header_container__icons-add-side {
   border-left: 2px solid var(--black-color);
@@ -363,6 +390,25 @@
   align-items: center;
   width: 95px;
 }
+.image_reaction__container-simbole-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.image_reaction__container-simbole-heart:hover .image_reaction__container-simbole-heart--fill {
+  width: 25px;
+  z-index: 3;
+}
+.image_reaction__container-simbole-heart img {
+  position: absolute;
+}
+.image_reaction__container-simbole-heart--fill {
+  transition: all 1s;
+  width: 0;
+}
 .image_reaction__container-dots {
   display: flex;
   justify-content: space-between;
@@ -557,6 +603,7 @@ body {
   width: 390px;
   background-color: #ffffff;
   border-radius: 15px;
+  box-shadow: 7px 14px 20px 0px;
 }
 
 .image_scroll {
