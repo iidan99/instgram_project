@@ -1,0 +1,20 @@
+:root {
+  --light-red-color: #fe0135;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --light-blue: #1fa1ff;
+  --lighter-blue: #32b5ff;
+  --light-gray: #6e6e6e;
+  --lighter-gray: #c4c4c4;
+}
+
+@mixin flex($flex: flex, $content: center, $align: center) {
+  display: $flex;
+  justify-content: $content;
+  align-items: $align;
+}
+
+@mixin font_style($size: 1rem, $weight: 400) {
+  font-size: $size;
+  font-weight: $weight;
+}

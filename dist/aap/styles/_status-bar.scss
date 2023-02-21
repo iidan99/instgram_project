@@ -1,27 +1,23 @@
+@import "./variable";
+
 .status_bar_container {
+  @include flex(flex, space-between, center);
   height: 47px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 14px 0 38px;
   border-radius: 15px 15px 0 0;
   &__time {
     font-weight: 600;
   }
   &__details {
-    justify-content: space-evenly;
+    @include flex(flex, space-evenly, center);
     width: 100px;
-    display: flex;
-    align-items: center;
     &-wifi {
       width: 17px;
     }
     &-buttery-container {
-      width: 25px;
+      @include flex(flex, center, center);
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 25px;
       width: 29px;
       img {
         position: absolute;

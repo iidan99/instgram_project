@@ -1,13 +1,10 @@
+@import "./variable";
 .message_input {
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(flex, space-between, center);
     padding: 13px 15px;
     &-left {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flex(flex, space-between, center);
       img {
         width: 30px;
         border-radius: 60px;
@@ -22,8 +19,7 @@
       }
     }
     &-right {
-      display: flex;
-      justify-content: space-between;
+      @include flex(flex, space-between, center);
       width: 65px;
       img {
         width: 15px;

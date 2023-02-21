@@ -1,25 +1,22 @@
+@import "./variable";
 .image_body {
   &__img {
     position: relative;
     height: 391px;
     &-pages {
-      display: flex;
+      @include flex(flex, center, center);
       background-color: rgba(0, 0, 0, 0.6);
       width: 30px;
       top: 22px;
       right: 19px;
       border-radius: 12px;
-      justify-content: center;
-      color: white;
-      font-weight: 100;
+      @include font_style(0.75rem, 400);
+      color: var(--white-color);
       position: absolute;
-      font-size: 0.75rem;
       padding: 4px 6px;
     }
     &-tag {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, center, center);
       position: relative;
       width: 24px;
       height: 24px;

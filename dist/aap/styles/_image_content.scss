@@ -1,28 +1,27 @@
+@import "./variable";
+
 .image_content {
   &__container {
+    @include flex(flex, space-between, flex-start);
     padding: 0 15px;
     line-height: 17px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    font-size: 0.875rem;
+    @include font_style(0.875rem, 200);
     &-viewall {
-      color: #6e6e6e;
+      color: var(--light-gray);
     }
     &-likes {
-      font-weight: 800;
-      font-size: 0.875rem;
+      @include font_style(0.875rem, 800);
     }
     &-details {
       margin: 6px 0;
-      font-size: 0.875rem;
-      font-weight: 200;
+      @include font_style(0.875rem, 200);
       &-user {
         font-weight: 800;
       }
       &-content {
         &--more {
-          color: #6e6e6e;
+          color: var(--light-gray);
         }
       }
     }

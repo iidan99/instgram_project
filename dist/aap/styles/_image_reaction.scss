@@ -1,31 +1,27 @@
+@import "./variable";
+
 .image_reaction {
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(flex, space-between, center);
     padding: 10px 15px;
     position: relative;
     &-simbole {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex(flex, space-between, center);
       width: 95px;
     }
     &-dots {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex(flex, space-between, center);
       width: 55px;
       // height: 100%;
       position: absolute;
       left: 170px;
       &-num {
-        background: #c4c4c4;
+        background: var(--lighter-gray);
         border-radius: 60px;
         width: 8px;
         height: 8px;
         &--active {
-          background-color: #32b5ff;
+          background-color: var(--lighter-blue);
         }
         &--smaller {
           width: 5px;
