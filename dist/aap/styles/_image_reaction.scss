@@ -13,16 +13,24 @@
         width: 24px;
         height: 24px;
         position: relative;
-        &:hover &--fill {
+        &-link {
+          $selfe: &;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            position: absolute;
+          }
+          &--fill {
+            transition: all 1s;
+            width: 0;
+          }
+        }
+        &-link:focus &-link--fill {
           width: 25px;
           z-index: 3;
-        }
-        img {
-          position: absolute;
-        }
-        &--fill {
-          transition: all 1s;
-          width: 0;
         }
       }
     }

@@ -17,13 +17,20 @@
       &:hover &-fill {
         width: 25px;
       }
+      &-link {
+        @include flex();
+        &:focus &-fill {
+          width: 25px;
+          z-index: 2;
+        }
+        &-fill {
+          width: 0px;
+          transition: all 1s;
+        }
+      }
       position: relative;
       img {
         position: absolute;
-      }
-      &-fill {
-        width: 0px;
-        transition: all 1s;
       }
     }
     &-chat {
@@ -58,7 +65,7 @@
       &-side {
         border-left: 2px solid var(--black-color);
         position: absolute;
-        left: 7.2px;
+        left: 7.5px;
         border-radius: 8px;
         top: 2px;
         height: 12px;
@@ -66,9 +73,9 @@
       &-straight {
         border-left: 2px solid var(--black-color);
         position: absolute;
-        left: 7.2px;
+        left: 7.5px;
         border-radius: 8px;
-        top: 2.1px;
+        top: 2.3px;
         height: 12px;
         transform: rotate(90deg);
       }

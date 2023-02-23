@@ -90,12 +90,21 @@
 .header_container__icons-heart:hover .header_container__icons-heart-fill {
   width: 25px;
 }
-.header_container__icons-heart img {
-  position: absolute;
+.header_container__icons-heart-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.header_container__icons-heart-fill {
+.header_container__icons-heart-link:focus .header_container__icons-heart-link-fill {
+  width: 25px;
+  z-index: 2;
+}
+.header_container__icons-heart-link-fill {
   width: 0px;
   transition: all 1s;
+}
+.header_container__icons-heart img {
+  position: absolute;
 }
 .header_container__icons-chat {
   display: flex;
@@ -132,7 +141,7 @@
 .header_container__icons-add-side {
   border-left: 2px solid var(--black-color);
   position: absolute;
-  left: 7.2px;
+  left: 7.5px;
   border-radius: 8px;
   top: 2px;
   height: 12px;
@@ -140,9 +149,9 @@
 .header_container__icons-add-straight {
   border-left: 2px solid var(--black-color);
   position: absolute;
-  left: 7.2px;
+  left: 7.5px;
   border-radius: 8px;
-  top: 2.1px;
+  top: 2.3px;
   height: 12px;
   transform: rotate(90deg);
 }
@@ -422,16 +431,23 @@
   height: 24px;
   position: relative;
 }
-.image_reaction__container-simbole-heart:hover .image_reaction__container-simbole-heart--fill {
-  width: 25px;
-  z-index: 3;
+.image_reaction__container-simbole-heart-link {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.image_reaction__container-simbole-heart img {
+.image_reaction__container-simbole-heart-link img {
   position: absolute;
 }
-.image_reaction__container-simbole-heart--fill {
+.image_reaction__container-simbole-heart-link--fill {
   transition: all 1s;
   width: 0;
+}
+.image_reaction__container-simbole-heart-link:focus .image_reaction__container-simbole-heart-link--fill {
+  width: 25px;
+  z-index: 3;
 }
 .image_reaction__container-dots {
   display: flex;
