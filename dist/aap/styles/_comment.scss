@@ -1,0 +1,57 @@
+@import "./variable";
+
+.comment {
+  display: flex;
+  &__container {
+    @include flex(flex, space-between, center);
+    width: 100%;
+    padding: 25px 15px;
+    input {
+      width: 250px;
+      border-radius: 20px;
+      padding: 10px;
+      border: 1px solid var(--light-gray);
+      background-color: var(--black-color);
+      color: var(--white-color);
+      font-family: "light-font";
+      &::placeholder {
+        color: var(--white-color);
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: "light-font";
+        letter-spacing: 1.5px;
+        padding: 0 5px;
+      }
+    }
+    &-icon {
+      @include flex(flex, space-between, center);
+      width: 60px;
+      a {
+        @include flex();
+        width: 20px;
+        height: 20px;
+      }
+      &-heart {
+        &-fill {
+          position: relative;
+          &--active {
+            width: 0;
+            transition: all 0.5s;
+          }
+          &:focus &--active {
+            width: 25px;
+          }
+          a {
+            @include flex();
+            width: 20px;
+            height: 20px;
+            position: relative;
+          }
+        }
+        img {
+          position: absolute;
+        }
+      }
+    }
+  }
+}

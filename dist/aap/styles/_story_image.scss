@@ -1,0 +1,78 @@
+@import "./variable";
+
+.story_container {
+  position: relative;
+  &-fillbar {
+    position: absolute;
+    border-top: dashed 3px var(--white-color);
+    top: 8px;
+    width: 375px;
+    margin: 0 auto;
+    left: 9px;
+    border-radius: 60px;
+  }
+  &-user {
+    @include flex(flex, space-between, center);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    &-left {
+      @include flex(flex, space-between, center);
+      width: 130px;
+      padding: 25px 15px;
+      img {
+        border-radius: 60px;
+        width: 33px;
+        border: 1px solid var(--light-gray);
+      }
+      p {
+        opacity: 0.7;
+        font-size: 0.875rem;
+      }
+      h3 {
+        font-family: "light-font";
+        font-size: 0.875rem;
+        letter-spacing: 1.5px;
+      }
+    }
+    &-right {
+      @include flex(flex, space-around, center);
+      position: relative;
+      right: 11px;
+      width: 75px;
+      a {
+        @include flex();
+        width: 25px;
+        height: 25px;
+      }
+      &-dots {
+        @include flex(flex, space-around, center);
+        cursor: pointer;
+        width: 18px;
+        &-element {
+          width: 4px;
+          height: 4px;
+          border-radius: 60px;
+          background-color: var(--white-color);
+        }
+      }
+      &-exit {
+        @include flex();
+        position: relative;
+        right: 0;
+        &-left,
+        &-right {
+          position: absolute;
+          border-left: 2px solid var(--white-color);
+          height: 30px;
+        }
+        &-left {
+          transform: rotate(45deg);
+        }
+        &-right {
+          transform: rotate(316deg);
+        }
+      }
+    }
+  }
+}

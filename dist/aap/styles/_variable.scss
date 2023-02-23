@@ -7,6 +7,10 @@
   --light-gray: #6e6e6e;
   --lighter-gray: #c4c4c4;
 }
+@font-face {
+  font-family: light-font;
+  src: url(../assets/font/sf-ui-display-thin-58646e9b26e8b.woff);
+}
 
 @mixin flex($flex: flex, $content: center, $align: center) {
   display: $flex;

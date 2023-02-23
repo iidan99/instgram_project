@@ -10,6 +10,9 @@
 @import "./styles/bottom_nav";
 @import "./styles/phone_nav";
 
+a {
+  text-decoration: none;
+}
 @font-face {
   font-family: myFirstFont;
   src: url("./assets/font/sf-ui-display-medium-58646be638f96.woff");
@@ -43,7 +46,7 @@ body {
   width: 390px;
   background-color: #ffffff;
   border-radius: 15px;
-  box-shadow: 7px 14px 20px 0px;
+  box-shadow: 7px 14px 20px 0px var(--black-color);
 }
 .image_scroll {
   overflow: scroll;
@@ -54,4 +57,16 @@ body {
     display: block;
     // opacity: 0.7;
   }
+}
+.container-story {
+  background-color: var(--black-color);
+  width: 390px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: var(--white-color);
+  position: absolute;
+  top: 49px;
+  z-index: 2;
+  height: 871px;
 }
